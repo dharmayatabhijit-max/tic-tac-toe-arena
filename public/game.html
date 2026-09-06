@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Play Game - Tic-Tac-Toe Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <div class="game-header">
+            <button id="homeBtn" class="small-btn">← Home</button>
+
+            <h1>Tic-Tac-Toe <span>Arena</span></h1>
+
+            <button id="restartBtn" class="small-btn">↻ Restart</button>
+        </div>
+
+        <section class="score-board">
+
+            <div class="player-card player-x">
+                <div class="symbol">X</div>
+                <div>
+                    <p>PLAYER X</p>
+                    <h2 id="playerXName">Player X</h2>
+                </div>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="player-card player-o">
+                <div class="symbol">O</div>
+                <div>
+                    <p>PLAYER O</p>
+                    <h2 id="playerOName">Player O</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="turnMessage" class="turn-message">
+            Player X's turn
+        </div>
+
+        <section id="gameBoard" class="game-board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+        <div id="resultMessage" class="result-message"></div>
+
+        <button id="playAgainBtn" class="primary-btn play-again">
+            Play Again
+        </button>
+
+    </main>
+
+    <script src="js/game.js"></script>
+
+</body>
+</html>

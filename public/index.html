@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <main class="home-container">
+
+        <section class="hero-card">
+
+            <div class="game-logo">
+                <span>×</span>
+                <span>○</span>
+            </div>
+
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>Tic-Tac-Toe <span>Arena</span></h1>
+
+            <p class="subtitle">
+                Challenge your friend and become the ultimate champion.
+            </p>
+
+            <div class="players-form">
+
+                <div class="player-input">
+                    <label for="playerX">Player X</label>
+                    <input
+                        type="text"
+                        id="playerX"
+                        placeholder="Enter Player X name"
+                        maxlength="15"
+                    >
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="player-input">
+                    <label for="playerO">Player O</label>
+                    <input
+                        type="text"
+                        id="playerO"
+                        placeholder="Enter Player O name"
+                        maxlength="15"
+                    >
+                </div>
+
+            </div>
+
+            <button id="startGameBtn" class="primary-btn">
+                Start Game
+                <span>→</span>
+            </button>
+
+            <button id="leaderboardBtn" class="secondary-btn">
+                🏆 View Leaderboard
+            </button>
+
+            <p class="game-info">
+                🎮 2 Players &nbsp; • &nbsp; 3 × 3 Board &nbsp; • &nbsp; Free to Play
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/home.js"></script>
+
+</body>
+</html>
