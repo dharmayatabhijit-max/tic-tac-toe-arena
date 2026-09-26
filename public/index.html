@@ -27,7 +27,7 @@
             <h1>Tic-Tac-Toe <span>Arena</span></h1>
 
             <p class="subtitle">
-                Challenge your friend and become the ultimate champion.
+                A quick, focused board for friendly rivalry or a battle against the machine.
             </p>
 
             <div class="players-form">
@@ -56,6 +56,61 @@
 
             </div>
 
+            <div class="setup-grid">
+                <label class="setup-control" for="gameMode">
+                    <span>Game mode</span>
+                    <select id="gameMode">
+                        <option value="local">2 players</option>
+                        <option value="ai">Play vs AI</option>
+                    </select>
+                </label>
+
+                <label class="setup-control" for="turnTimer">
+                    <span>Turn timer</span>
+                    <select id="turnTimer">
+                        <option value="0">No timer</option>
+                        <option value="15">15 seconds</option>
+                        <option value="30" selected>30 seconds</option>
+                        <option value="60">60 seconds</option>
+                    </select>
+                </label>
+
+                <label class="setup-control" for="seriesMode">
+                    <span>Match format</span>
+                    <select id="seriesMode">
+                        <option value="single">Single game</option>
+                        <option value="bestOf3" selected>Best of 3</option>
+                    </select>
+                </label>
+
+                <label class="setup-control" for="aiDifficulty">
+                    <span>AI difficulty</span>
+                    <select id="aiDifficulty">
+                        <option value="easy">Easy</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </label>
+
+                <label class="setup-control style-choice" for="boardStyle">
+                    <span>Board style</span>
+                    <select id="boardStyle">
+                        <option value="classic">Classic</option>
+                        <option value="neon">Neon</option>
+                        <option value="glass" selected>Glass</option>
+                        <option value="minimal">Minimal</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="preference-row">
+                <label class="toggle-control">
+                    <input type="checkbox" id="soundEnabled" checked>
+                    <span class="toggle-switch"></span>
+                    <span>Music &amp; sounds</span>
+                </label>
+            </div>
+
             <button id="startGameBtn" class="primary-btn">
                 Start Game
                 <span>→</span>
@@ -66,7 +121,7 @@
             </button>
 
             <p class="game-info">
-                🎮 2 Players &nbsp; • &nbsp; 3 × 3 Board &nbsp; • &nbsp; Free to Play
+                🎮 Profiles saved on this device &nbsp; • &nbsp; 3 × 3 Board
             </p>
 
         </section>

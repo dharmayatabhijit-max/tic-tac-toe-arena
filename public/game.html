@@ -18,7 +18,10 @@
 
             <h1>Tic-Tac-Toe <span>Arena</span></h1>
 
-            <button id="restartBtn" class="small-btn">↻ Restart</button>
+            <div class="header-actions">
+                <button id="musicToggle" class="small-btn" type="button" aria-pressed="true">♫ Sound On</button>
+                <button id="restartBtn" class="small-btn">↻ Restart</button>
+            </div>
         </div>
 
         <section class="score-board">
@@ -43,9 +46,24 @@
 
         </section>
 
-        <div id="turnMessage" class="turn-message">
-            Player X's turn
+        <div class="game-status-row">
+            <div id="turnMessage" class="turn-message">Player X's turn</div>
+            <div id="timerDisplay" class="timer-display" aria-live="polite">--</div>
         </div>
+
+        <div id="seriesScore" class="series-score" aria-live="polite"></div>
+
+        <section class="reaction-panel" aria-label="Quick reactions">
+            <span>React</span>
+            <button class="reaction-btn" data-reaction="👏" aria-label="Clap">👏</button>
+            <button class="reaction-btn" data-reaction="🔥" aria-label="Fire">🔥</button>
+            <button class="reaction-btn" data-reaction="😄" aria-label="Smile">😄</button>
+            <button class="reaction-btn" data-reaction="😮" aria-label="Surprised">😮</button>
+            <div id="reactionPop" class="reaction-pop" aria-live="polite">
+                <strong class="reaction-name"></strong>
+                <span class="reaction-emoji"></span>
+            </div>
+        </section>
 
         <section id="gameBoard" class="game-board">
 

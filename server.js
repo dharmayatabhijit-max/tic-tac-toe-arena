@@ -9,6 +9,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const mongoUri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/tic-tac-toe-arena";
 
 app.use(express.json());
 
@@ -27,12 +28,13 @@ app.get("/api/test", (req, res) => {
 
 // MongoDB connection
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(mongoUri)
   .then(() => {
     console.log("MongoDB connected successfully");
   })
   .catch((error) => {
     console.error("MongoDB connection error:", error.message);
+    console.error("Set MONGODB_URI in a .env file for a hosted MongoDB connection.");
   });
 
 // Start server

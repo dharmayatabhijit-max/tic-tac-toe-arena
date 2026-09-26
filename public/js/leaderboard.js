@@ -1,6 +1,8 @@
 const leaderboard = document.getElementById("leaderboard");
 const homeBtn = document.getElementById("homeBtn");
 
+document.body.dataset.theme = localStorage.getItem("boardStyle") || "glass";
+
 async function loadLeaderboard() {
 
     try {
